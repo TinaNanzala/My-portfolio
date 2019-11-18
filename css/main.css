@@ -33,12 +33,12 @@ img{
 }
 .TOP .web .header h2{
 	margin: 0px auto;
-	font-size: 40px;
+	font-size: 60px;
 	padding: 10px 0;
 	width: 600px;
 	color: #FFF;
 	text-transform:uppercase;
-	margin-bottom:30px;
+/*	margin-bottom:30px;*/
 }
 
  .web .header a{
@@ -236,6 +236,50 @@ img{
     flex-wrap: wrap;
     padding-left: 10%;
 }
+
+
+/*.containe{
+  position: relative;
+  width: 50%;
+}
+
+
+.image {
+  width: 30%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 30%;
+  height: 30%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+
+.containe:hover .overlay {
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}*/
+
+
+
 section {
   float: left;
   width: 100%; }
@@ -250,6 +294,13 @@ img {
 #lightninBox {
   z-index: 99; 
 }
+.pic{
+      width:190px;
+      height:190px;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      background: url(http://www.corelangs.com/css/box/img/duck.png) no-repeat;
+    }
 
 
 header {
@@ -332,8 +383,21 @@ header {
   .recent-works .portfolio-content .lightninBox img {
         width:60%;
         padding-top: 30px;
+         opacity: 1;
+      filter: alpha(opacity=100);
 
       }
+  .recent-works .portfolio-content .lightninBox:hover
+    {
+      opacity: 0.3;
+      filter: alpha(opacity=30);
+    }
+    .header h4{
+      color:#fff;
+      padding-bottom:30px;
+      font-size: 20px;
+    }
+
 /*  .container {
     padding-top: 40px;
   }
